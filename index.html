@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <title>Filosofia</title>
+</head>
+<body>
+    <header>
+        <h1>A filosofia e nossa vida</h1>
+    </header>
+    <main>
+        <section class="inicio">
+            <h2>O quão importante é a filosofia?</h2>
+            <p>Desde os primórdios, temos uma base de dados filosóficos que nos ajudam a pensar um pouco mais sobre a vida, nossa de maneira isolada ou em conjunto em sociedade, seja uma utopia ou distopia, democracia, monarquia, anarquia ou autarquia. Independentemente de tudo o que já houve, sempre ficaram lições, que podem ser interpretadas de maneira mais superficial ou termos um entendimento profundo, trazendo conhecimento e experiência para nossa vida.
+            </p>
+            <p>Podemos dizer que as filosofias de Platão, Sócrates, Friedrich Nietzsche, entre outros, nos trazem uma sensação de sabedoria momentânea quando as entendemos e conseguimos aplicar esse conhecimento em nossas vidas nos dias atuais. Aqui, vou listar alguns filósofos e algumas filosofias que marcaram o crescimento da vida humana, informações que foram relevantes ao longo dos tempos, outras que já têm um significado superficial demais para fazer tanto sentido quanto na época em que foram pensadas e compartilhadas, mas que, de todo modo, fazem parte da história marcante da filosofia.
+            </p>
+            <input type="text" placeholder="Digite o nome de um filósofo" id="campo-de-pesquisa" list="filosofo" name="filosofo" autocomplete="on">
+            <datalist id="filosofo">
+                <option value="Tales de Mileto"></option>
+                <option value="Anaximandro"></option>
+                <option value="Heráclito de Éfeso"></option>
+                <option value="Pitágoras de Samos"></option>
+                <option value="Parmênides de Eléia"></option>
+                <option value="Sócrates"></option>
+                <option value="Platão"></option>
+                <option value="Aristóteles"></option>
+                <option value="Epicuro"></option>
+                <option value="Santo Agostinho"></option>
+                <option value="Tomás de Aquino"></option>
+                <option value="René Descartes"></option>
+                <option value="Baruch Spinoza"></option>
+                <option value="John Locke"></option>
+                <option value="Immanuel Kant"></option>
+                <option value="Friedrich Nietzsche"></option>
+            </datalist>
+            <button id="botao-de-pesquisa" class="botao" onclick="pesquisar()">Pesquisar</button>
+            <div class="grupo-imagem">
+                <img src="assets/img/TalesdeMileto.jpg" alt="">
+                <img src="assets/img/Anaximandro.jpg" alt="">
+                <img src="assets/img/HeráclitodeÉfeso.jpg" alt="">
+                <img src="assets/img/PitágorasdeSamos.jpg" alt="">
+                <img src="assets/img/ParmênidesdeEléia.jpg"alt="">
+                <img src="assets/img/Sócrates.jpg" alt="">
+                <img src="assets/img/Platão.jpg" alt="">
+                <img src="assets/img/Aristóteles.jpg" alt="">
+                <img src="assets/img/Epicuro.jpg" alt="">
+                <img src="assets/img/SantoAgostinho.jpg" alt="">
+                <img src="assets/img/TomásdeAquino.jpg" alt="">
+                <img src="assets/img/RenéDescartes.jpg" alt="">
+                <img src="assets/img/BaruchSpinoza.jpg" alt="">
+                <img src="assets/img/JohnLocke.jpg" alt="">
+                <img src="assets/img/ImmanuelKant.jpg" alt="">
+                <img src="assets/img/FriedrichNietzsche.jpg" alt="">
+            </div>
+        </section>
+        <section class="resultado" id="resultado">
+        </section>
+    </main>
+    <footer>
+        <p>®TWD todos os direitos reservados 2024.</p>
+        <a class="footer__ancora" href="https://www.linkedin.com/in/alysson-santos" target="_blank"><button class="footer__btn__contato"><i class="bi bi-linkedin"></i></button>LinkedIn</a>
+        <a class="footer__ancora" href="https://github.com/Alyssonafsantos" target="_blank"><button class="footer__btn__contato"><i class="bi bi-github"></i></button>GitHub</a>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

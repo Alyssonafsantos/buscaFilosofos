@@ -1,0 +1,128 @@
+/* Cores principais */
+:root {
+    --cor-fundo: #f5f2e9;
+    --cor-texto: #333;
+    --cor-destaque: #b8860b;
+    --cor-botao: #6b4226;
+    --cor-hover: #8c564b;
+}
+
+/* Estilo do Body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-image: url("assets/img/pergaminho.jpg"); /* Exemplo de imagem de pergaminho */
+    background-size: cover;
+    color: var(--cor-destaque);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.inicio{
+    padding:3rem;
+}
+
+/* Títulos */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+h1{
+    font-size: 2.3rem;
+    color:#333;
+}
+h2{
+    font-size: 2rem;
+}
+
+p{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+}
+
+.imagem{
+    box-shadow:#6b4226 10px 0 5px;
+    margin-right: 1rem;
+    border-radius: 10%;
+    transition: ease 1s;
+}
+.imagem:hover{
+    transform: scale(1.1);
+}
+
+/* Campo de Pesquisa */
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border: 2px solid var(--cor-destaque);
+    border-radius: 5px;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: var(--cor-hover);
+    outline: none;
+}
+
+/* Botões */
+button {
+    background-color: var(--cor-botao);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--cor-hover);
+}
+
+/* Cards de Resultados */
+.resultado-de-pesquisa {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 3rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.flex{
+    display: flex;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #f5f2e9;
+    text-align: center;
+    padding: 1rem;
+}
+.grupo-imagem{
+    display: none;
+}
+.footer__ancora{
+    text-decoration: none;
+    padding-right: 2rem;
+    color:#8c564b;
+}
+.footer__btn__contato{
+    border-radius: 50%;
+    width:3rem;
+    height:3rem;
+    transition: ease 1s;
+}
+.footer__btn__contato:hover{
+    transform:scale(1.3);
+}
